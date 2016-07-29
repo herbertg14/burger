@@ -9,20 +9,22 @@ router.get("/", function(req,res){
 });
 
 router.get("/burgers", function(req,res){
-
+	burger.selectAll(function(data){
+		var hbsObject = {burgers: data};
+		console.log(hbsObject);
+		res.render("index", hbsObject);
+	});
 });
 
 router.post("/burgers/create", function(req, res){
-
+	burger.insertOne(["burger_name"], [req.body.name], function(data){
+		res.redirect("burgers");
+	});
 });
 
 router.put("/burgers/update/:id", function(req, res){
-
+	burger
 });
 
-//dont know if ill need this 
-router.delete("/burgers/delete/:id", function(req,res){
-
-});
 
 module.exports = router; 
