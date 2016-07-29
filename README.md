@@ -12,7 +12,6 @@ Model setup:
 ##############################
 Controller setup:
 
-- finish router.post
 - finish router.put
 - Create the router for the app, and export the router at the end of your file.
 
@@ -20,13 +19,6 @@ Controller setup:
 #############################
 View setup:
 
-- Inside your burger directory, create a folder named views.
-
-- Create the index.handlebars file inside views directory.
-
-- Create the layouts directory inside views directory.
-
-- Create the main.handlebars file inside layouts directory.
 
 - Setup the main.handlebars file so it's able to be used by Handlebars.
 
