@@ -1,7 +1,7 @@
 
 var express = require('express');
 var router = express.Router();
-var cat = require('../models/burger.js');
+var burger = require('../models/burger.js');
 
 
 router.get("/", function(req,res){

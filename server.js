@@ -5,7 +5,7 @@ bodyParser = require("body-parser");
 var app = express();
 
 // check if this is right
-app.use(express.statis(process.cwd() + "/public"));
+app.use(express.static(process.cwd() + "/public"));
 
 app.use(bodyParser.urlencoded({
 	extended:false
